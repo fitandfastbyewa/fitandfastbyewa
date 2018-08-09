@@ -1,0 +1,45 @@
+body {
+  font-family: 'Raleway', sans-serif!important;
+}
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.carousel-inner > .carousel-item > .container > .carousel-caption {
+  background: rgba(0, 0, 0, .5);
+  padding: 3rem;
+  border-radius: 15px;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.jumbotron {
+    padding:0.5rem;
+    margin-bottom: 0;
+}
+
+.cook-time {
+  font-size: .875rem;
+  border-radius: 3px;
+  background-color: #28a745;
+  color: #FFF!important;
+  padding: 0.5rem;
+}
+
+.category-title {
+  margin-bottom:2rem;
+}
+
+.about-me {
+  padding:2rem;
+}
+
+a {
+  color: #28a745;
+}
+
+footer {
+  color: #FFF;
+}
