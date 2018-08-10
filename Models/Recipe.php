@@ -25,8 +25,34 @@ class Recipe extends Model
       $recipe = $req->fetch();
       $createDate = date('Y/m/d', strtotime($recipe['createdate']));
       $recipe['imageUrl'] = $createDate . '/' . $recipe['url'] . '/' . $recipe['url'] . '.jpg';
-      $recipe['url'] = 'recipe/' . $recipe['url'];
+
+      require(ROOT . 'Models/Ingredients.php');
+      $ingredients = new Ingredients();
+      $recipe['ingredients'] = $ingredients->get($recipe['id']);
+      $recipe['slider'] = $this->getImagesSlider($recipe);
 
       return $recipe;
+    }
+
+    private function getImagesSlider($recipe)
+    {
+      $slider = [];
+      $createDate = date('Y/m/d', strtotime($recipe['createdate']));
+      $filePath ='public/images/przepisy/' . $createDate . '/' . $recipe['url'] . '/slider';
+
+      require(ROOT . 'Models/Images.php');
+      $imagesModel = new Images();
+      $images = $imagesModel->get($recipe['id']);
+
+      foreach($images as &$image) {
+        $image['url'] =  '/' . $filePath . '/' . $image['name'];
+      }
+
+      $images[] = [
+          'url' => '/public/images/przepisy/' . $recipe['imageUrl'],
+          'description' => 'Gotowe danie - ' . $recipe['title']
+      ];
+
+      return $images;
     }
 }
