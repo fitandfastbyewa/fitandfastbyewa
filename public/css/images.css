@@ -36,6 +36,38 @@ body {
   padding:2rem;
 }
 
+.breadcrumb {
+  background: none;
+  font-size: 0.6em;
+  color:#6c757d;
+}
+
+.breadcrumb > .breadcrumb-item > a{
+  color:#6c757d;
+}
+
+.badge {
+    padding: 0.6em;
+    font-size: 0.4em;
+}
+
+.recipe > .blockquote > .title {
+    padding-bottom: 0.2em;
+}
+
+.recipe > .blockquote > .title > .badge {
+  margin-left: 0.5em;
+}
+
+.recipe > .blockquote > p {
+    padding:1em;
+}
+
+.recipe > .blockquote > .social-media {
+  padding:0.5em;
+
+}
+
 a {
   color: #28a745;
 }

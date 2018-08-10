@@ -76,26 +76,9 @@
                 <div class="container">
                   <h3 class="text-center category-title">Najnowsze przepisy</h3>
                   <div class="row">
-                    <div class="col-md-4">
-                      <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-                        src="/public/images/przepisy/2017/01/01/zupa-krem-z-kalarepy/zupa-krem-z-kalarepy.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                        <div class="card-body">
-                          <h4>Zupa krem z kalarepy <small class="text-muted text-right cook-time">9 min</small></h4>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-sm btn-success">Zobacz</button>
-                            </div>
-                            <div>
-                              <img src="/public/images/social-media/facebook-fitandfastbyewa.png"/>
-                              <img src="/public/images/social-media/google-plus-fitandfastbyewa.png"/>
-                              <img src="/public/images/social-media/pinterest-fitandfastbyewa.png"/>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <?php foreach($recipes as $recipe) {
+                      include 'recipe.php';
+                  } ?>
                   </div>
                 </div>
               </div>

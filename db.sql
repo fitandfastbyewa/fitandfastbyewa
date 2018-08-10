@@ -1,8 +1,10 @@
 CREATE TABLE recipe (
   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  title VARCHAR(200) NOT NULL,
-  description VARCHAR(500) NOT NULL,
+  title VARCHAR(500) NOT NULL,
+  url VARCHAR(500) NOT NULL,
+  description TEXT NOT NULL,
+  recipe TEXT NOT NULL,
   createdate TIMESTAMP,
-  active BOOLEAN DEFAULT false
-  main_image VARCHAR(200) NOT NULL
+  active BOOLEAN DEFAULT false,
+  cook_time INT NOT NULL
 );
