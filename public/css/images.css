@@ -46,17 +46,14 @@ body {
   color:#6c757d;
 }
 
-.badge {
-    padding: 0.6em;
-    font-size: 0.4em;
-}
-
 .recipe > .blockquote > .title {
     padding-bottom: 0.2em;
 }
 
 .recipe > .blockquote > .title > .badge {
   margin-left: 0.5em;
+  padding: 0.6em;
+  font-size: 0.4em;
 }
 
 .recipe > .blockquote > p {
@@ -71,6 +68,33 @@ body {
 .prepare > .card-group > .card {
     border: 1px solid rgba(0,0,0,.125);
     font-size: 0.9em;
+}
+
+.badge a {
+  color: #FFFFFF;
+}
+
+.categories-tag a {
+    color: #FFFFFF;
+}
+
+.categories-tag {
+  font-size:1.2em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.categories-tag > .badge {
+  margin-right:0.5em;
+  font-size:0.8em;
+}
+
+.similar-recipe > .card-group > .card {
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.categories > .container > .row > .col-md-4 > .card > .card-body > .card-text {
+  font-size: 0.9em;
 }
 
 a {

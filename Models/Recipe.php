@@ -31,6 +31,14 @@ class Recipe extends Model
       $recipe['ingredients'] = $ingredients->get($recipe['id']);
       $recipe['slider'] = $this->getImagesSlider($recipe);
 
+      require(ROOT . 'Models/Category.php');
+      $category = new Category();
+      $recipe['categories'] = $category->get($recipe['id']);
+
+      require(ROOT . 'Models/SimilarRecipe.php');
+      $similarRecipe = new SimilarRecipe();
+      $recipe['similar_recipe'] = $similarRecipe->get($recipe['id']);
+
       return $recipe;
     }
 

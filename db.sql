@@ -29,3 +29,19 @@ CREATE TABLE images (
   description TEXT,
   recipe_id INT(6) NOT NULL
 );
+
+CREATE TABLE category(
+  id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(500) NOT NULL,
+  normalize_name VARCHAR(500) NOT NULL
+);
+
+CREATE TABLE recipe_category(
+  recipe_id INT(6),
+  category_id INT(6)
+);
+
+CREATE TABLE similar_recipe(
+  recipe_id INT(6),
+  similar_recipe_id INT(6)
+);

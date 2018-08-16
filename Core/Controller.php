@@ -11,6 +11,11 @@
 
         function render($filename)
         {
+            require_once(ROOT . 'Models/Category.php');
+            $categoryModel = new Category();
+            $d['categories'] = $categoryModel->getAll();
+            $this->set($d);
+
             extract($this->vars);
             ob_start();
             require(ROOT . "Views/" . ucfirst(str_replace('Controller', '', get_class($this))) . '/' . $filename . '.php');
