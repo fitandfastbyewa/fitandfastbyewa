@@ -7,7 +7,7 @@ class Router
     {
         $url = trim($url);
         $explode_url = explode('/', $url);
-        $request->controller = $explode_url[1];
+        $request->controller = empty($explode_url[1]) ? 'index' : $explode_url[1];
         $request->action = 'index';
         $request->params = isset($explode_url[2]) ? explode('&', $explode_url[2]) : [];
 

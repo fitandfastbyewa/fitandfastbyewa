@@ -27,7 +27,7 @@
                     Wystarczy mieć dobry przepis, a każde
                     śniadanie, obiad czy kolacja doda Ci zdrowia i energii. Fit&FastByEwa pomoże Ci w przygotowaniu posiłków pełnych zdrowia, które dostarczą Twojemu organizmowi
                     niezbędnych witamin i składników mineralnych.</p>
-                  <p><a class="btn btn-lg btn-success" href="#" role="button">Zobacz co jesz</a></p>
+                  <p><a class="btn btn-lg btn-success" href="http://fitandfastbyewa.pl/" role="button">Zobacz co jesz</a></p>
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@
                   Sprawdź sam i wypróbuj kilka fit przepisów. Dania wegetaiańskie, mięsne czy rybne, zupy, koktajle, przekąski. Każdy znajdzie tu coś dla siebie.
                   Rozpocznij zdrowy tryb życia już dziś!
                 </p>
-                  <p><a class="btn btn-lg btn-success" href="#" role="button">Sprawdź co na obiad</a></p>
+                  <p><a class="btn btn-lg btn-success" href="http://fitandfastbyewa.pl/category/obiad/" role="button">Sprawdź co na obiad</a></p>
                 </div>
               </div>
             </div>
@@ -55,7 +55,7 @@
                   Zacznij już dziś zdrowo się odżywiać. Prostymi krokami wprowadź do swojej diety wiecej warzyw i owoców. Zadbaj by składniki były pełnowartościowe i odpowiednio
                   przygotowane.
               </p>
-                  <p><a class="btn btn-lg btn-success" href="#" role="button">Wypróbuj dania wegetariańskie</a></p>
+                  <p><a class="btn btn-lg btn-success" href="http://fitandfastbyewa.pl/category/wegetarianskie/" role="button">Wypróbuj dania wegetariańskie</a></p>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@
 <!-- carousel End -->
 
 <!-- Posty -->
-        <div class="album py-5 bg-light">
+            <div class="album py-5 bg-light categories">
                 <div class="container">
                   <h3 class="text-center category-title">Najnowsze przepisy</h3>
                   <div class="row">
@@ -80,6 +80,36 @@
                       include 'recipe.php';
                   } ?>
                   </div>
+<nav>
+  <!-- Pagination -->
+  <ul class="pagination justify-content-center">
+<?php
+    if(($current_page - 1) > 0) {
+        echo '<li class="page-item disabled">
+          <a class="page-link" href="/index/' . ($current_page - 1) . '" tabindex="-1"><<</a>
+        </li>';
+    }
+
+     for($i = 1; $i <= $pages; $i++) {
+      if($i == $current_page) {
+        echo '<li class="page-item active">
+            <a class="page-link" href="#">' . $current_page . ' <span class="sr-only">(current)</span></a>
+          </li>';
+      } else {
+        echo '<li class="page-item"><a class="page-link" href="/index/' . $i . '">' . $i . '</a></li>';
+      }
+    }
+
+    if(($current_page + 1) <= $pages) {
+      echo '<li class="page-item">
+        <a class="page-link" href="/index/' . ($current_page + 1) . '">>></a>
+      </li>';
+    }
+      ?>
+  </ul>
+</nav>
+<!-- End Pagination -->
+
                 </div>
               </div>
 

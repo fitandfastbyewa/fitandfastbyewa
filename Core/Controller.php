@@ -14,6 +14,21 @@
             require_once(ROOT . 'Models/Category.php');
             $categoryModel = new Category();
             $d['categories'] = $categoryModel->getAll();
+
+            if($filename === 'recipe') {
+                $d['page_title'] = $this->vars['recipe']['title'];
+                $d['recipe_description'] = $this->vars['recipe']['description'];
+                $d['recipe_key'] = $this->vars['recipe']['title'];
+
+                foreach($this->vars['recipe']['categories'] as $category) {
+                  $d['recipe_key'] .= ', ' . $category['name'];
+                }
+
+                $d['recipe_img'] = WWW . '/public/images/przepisy/' . $this->vars['recipe']['imageUrl'];
+            }
+
+            $d['recomended_recipes'] = $categoryModel->getRecomendedRecipes();
+
             $this->set($d);
 
             extract($this->vars);

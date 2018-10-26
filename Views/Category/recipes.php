@@ -27,7 +27,7 @@
                     Wystarczy mieć dobry przepis, a każde
                     śniadanie, obiad czy kolacja doda Ci zdrowia i energii. Fit&FastByEwa pomoże Ci w przygotowaniu posiłków pełnych zdrowia, które dostarczą Twojemu organizmowi
                     niezbędnych witamin i składników mineralnych.</p>
-                  <p><a class="btn btn-lg btn-success" href="#" role="button">Zobacz co jesz</a></p>
+                  <p><a class="btn btn-lg btn-success" href="http://fitandfastbyewa.pl/" role="button">Zobacz co jesz</a></p>
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@
                   Sprawdź sam i wypróbuj kilka fit przepisów. Dania wegetaiańskie, mięsne czy rybne, zupy, koktajle, przekąski. Każdy znajdzie tu coś dla siebie.
                   Rozpocznij zdrowy tryb życia już dziś!
                 </p>
-                  <p><a class="btn btn-lg btn-success" href="#" role="button">Sprawdź co na obiad</a></p>
+                  <p><a class="btn btn-lg btn-success" href="http://fitandfastbyewa.pl/category/obiad/" role="button">Sprawdź co na obiad</a></p>
                 </div>
               </div>
             </div>
@@ -55,7 +55,7 @@
                   Zacznij już dziś zdrowo się odżywiać. Prostymi krokami wprowadź do swojej diety wiecej warzyw i owoców. Zadbaj by składniki były pełnowartościowe i odpowiednio
                   przygotowane.
               </p>
-                  <p><a class="btn btn-lg btn-success" href="#" role="button">Wypróbuj dania wegetariańskie</a></p>
+                  <p><a class="btn btn-lg btn-success" href="http://fitandfastbyewa.pl/category/wegetarianskie/" role="button">Wypróbuj dania wegetariańskie</a></p>
                 </div>
               </div>
             </div>

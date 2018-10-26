@@ -16,7 +16,7 @@ class SimilarRecipe extends Model
           $category = new Category();
           $similarRecipe['categories'] = $category->get($similarRecipe['similar_recipe_id']);
           $createDate = date('Y/m/d', strtotime($similarRecipe['createdate']));
-          $similarRecipe['imageUrl'] = $createDate . '/' . $similarRecipe['url'] . '/' . $similarRecipe['url'] . '.jpg';
+          $similarRecipe['imageUrl'] = $createDate . '/' . $similarRecipe['url'] . '/' . $similarRecipe['url'] . '.JPG';
         }
 
         return $similarRecipes;

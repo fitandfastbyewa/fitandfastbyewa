@@ -97,10 +97,70 @@ body {
   font-size: 0.9em;
 }
 
+.ad-seans {
+    letter-spacing:2px;
+    color:#999999;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+    font-size: 0.6em;
+}
+
+#cookies-message-container {
+    padding: 10px 0px;
+    font-size: 14px;
+    line-height: 22px;
+    border-bottom: 1px solid #D3D0D0;
+    text-align: center;
+    background-color: #EFEFEF;
+    width: 100%;
+    position:fixed !important;
+    bottom:0;
+    z-index: 99999;
+}
+
+#accept-cookies-checkbox {
+  background-color: #28a745;
+  padding: 5px 10px;
+  color: #FFF; border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: none; cursor: pointer;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #28a745 !important;
+    color: white;
+    border-color: #28a745;
+}
+
+.pagination .page-link {
+   color: #28a745;
+}
+
 a {
   color: #28a745;
 }
 
 footer {
   color: #FFF;
+}
+
+.social-media a, .social-media span {
+  vertical-align: bottom;
+}
+
+.social-media iframe {
+	vertical-align: middle;
+
+}
+
+.recomended {
+  font-size: 0.9em;
+}
+
+.recomended h4 {
+  font-size: 1.5em;
 }
